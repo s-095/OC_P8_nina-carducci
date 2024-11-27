@@ -1,7 +1,11 @@
 body {
 	max-width: 1920px;
 	margin: auto;
-	font-family: 'Inter', sans-serif;
+	
+}
+
+* {
+	font-family: Inter;
 	font-style: normal;
 }
 
@@ -21,10 +25,14 @@ header .logo-title {
 	font-size: 26px;
 }
 
+.bar{
+	font-size: 19px;
+}
+
 nav ul {
 	display: flex;
 	list-style-type: none;
-	font-size: 14px;
+	font-size: 18px;
 	margin-bottom: 0;
 }
 
@@ -35,6 +43,10 @@ nav li {
 nav a {
 	text-decoration: none;
 	color: #000
+}
+
+.visually-hidden {
+	display: none;
 }
 
 .carousel-control-prev {
@@ -48,7 +60,7 @@ nav a {
 	height: fit-content;
 }
 
-.carousel-control-next .carousel-control-prev {
+.carousel-control-next {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -79,7 +91,6 @@ img.d-block {
 	max-width: 100%;
 	height: auto;
 }
-
 
 .social-link img {
 	width: 20px;
@@ -116,7 +127,7 @@ img.d-block {
 
 }
 
-#about-me {
+.about-me {
 	flex: 2
 }
 
@@ -133,7 +144,7 @@ img.d-block {
 	width: 80%;
 }
 
-#about-me p {
+.about-me p {
 	width: 80%;
 	font-size: 16px;
 }
@@ -205,8 +216,6 @@ img.d-block {
 }
 
 .quote {
-	font-family: 'Spectral';
-	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
@@ -216,6 +225,7 @@ img.d-block {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 28px;
 
 }
 
@@ -339,8 +349,8 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 
-	#about-me h6,
-	#about-me p {
+	.about-me h6,
+	.about-me p {
 		width: 100%;
 	}
 }
